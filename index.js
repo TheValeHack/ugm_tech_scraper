@@ -7,7 +7,8 @@ const cheerio = require("cheerio")
 const express = require("express")
 const app = express()
 const port = 3000
-const scrape_interval = 3
+
+const scrape_interval = 3 /* Set scraping schedule interval here (In days) */ 
 
 const storage = multer.memoryStorage()
 const upload = multer({ storage: storage })
